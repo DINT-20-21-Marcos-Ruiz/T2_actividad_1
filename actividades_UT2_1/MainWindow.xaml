@@ -12,7 +12,7 @@
                  Height="21" 
                  Margin="222,54,0,0" 
                  TextWrapping="Wrap"  
-                 VerticalAlignment="Top" 
+                 VerticalAlignment="Top"
                  Width="136" 
                  FontSize="16">
         </TextBox>
