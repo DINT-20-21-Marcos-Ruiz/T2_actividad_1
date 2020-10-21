@@ -5,58 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:actividades_UT2_1"
         mc:Ignorable="d"
-        Title="Actividad 1" Height="450" Width="800" Icon="16.ico">
+        Title="Adivina el número" Height="196.512" Width="606.977" Icon="16.ico">
     <Grid>
-        <TextBlock x:Name="adivinaTextoBlock" 
-                   HorizontalAlignment="Left" 
-                   TextWrapping="Wrap" 
-                   Text="Adivina el número" 
-                   VerticalAlignment="Top" 
-                   Margin="192,33,0,0" 
-                   FontSize="48" 
-                   Foreground="Red" 
-                   TextDecorations="{x:Null}" 
-                   FontWeight="Bold">
-            <TextBlock.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFFF9696" Offset="0"/>
-                    <GradientStop Color="#FFF7F7C0" Offset="1"/>
-                </LinearGradientBrush>
-            </TextBlock.Background>
-        </TextBlock>
         <TextBox x:Name="numeroTextBox" 
                  HorizontalAlignment="Left" 
-                 Height="23" 
-                 Margin="320,160,0,0" 
+                 Height="21" 
+                 Margin="222,54,0,0" 
                  TextWrapping="Wrap"  
                  VerticalAlignment="Top" 
-                 Width="126" 
+                 Width="136" 
                  FontSize="16">
         </TextBox>
         <TextBlock HorizontalAlignment="Left" 
-                   Margin="320,124,0,0" 
+                   Margin="23,54,0,0" 
                    TextWrapping="Wrap" 
-                   Text="Escribe el número" 
+                   Text="¿Qué número he pensado?" 
                    VerticalAlignment="Top" 
-                   FontSize="16">
+                   FontSize="14">
         </TextBlock>
         <Button x:Name="comprobarButton" 
                 Content="Comprobar" 
                 HorizontalAlignment="Left" 
-                Margin="338,277,0,0" 
+                Margin="23,104,0,0" 
                 VerticalAlignment="Top" 
-                Width="89" 
+                Width="145" 
                 FontSize="16" 
-                Click="ComprobarButton_Click">
+                Click="ComprobarButton_Click" RenderTransformOrigin="-0.003,-0.011" Height="31">
         </Button>
         <Button x:Name="reiniciarButton" 
                 Content="Reiniciar" 
                 HorizontalAlignment="Left" 
-                Margin="338,229,0,0" 
+                Margin="195,104,0,0" 
                 VerticalAlignment="Top" 
-                Width="89" 
+                Width="145" 
                 FontSize="16" 
-                Click="ReiniciarButton_Click">
+                Click="ReiniciarButton_Click" Height="31">
         </Button>
+        <TextBlock x:Name="mensajeResultado" Margin="385,54,88,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126" Height="21" FontSize="14"/>
     </Grid>
 </Window>

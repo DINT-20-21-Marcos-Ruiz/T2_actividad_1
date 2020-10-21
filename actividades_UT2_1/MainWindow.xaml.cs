@@ -30,14 +30,17 @@ namespace actividades_UT2_1
 
         private void ComprobarButton_Click(object sender, RoutedEventArgs e)
         {
-            if (Convert.ToInt32(numeroTextBox.Text) > numAleatorio) MessageBox.Show("Te has quedado corto");
-            else if (Convert.ToInt32(numeroTextBox.Text) < numAleatorio) MessageBox.Show("Te has pasado");
-            else MessageBox.Show("¡Acertaste!");
+            if (Convert.ToInt32(numeroTextBox.Text) > numAleatorio) mensajeResultado.Text = "Te has pasado"; 
+            else if (Convert.ToInt32(numeroTextBox.Text) < numAleatorio) mensajeResultado.Text = "Te has quedado corto";
+            else mensajeResultado.Text = "¡Acertaste!";
         }
 
         private void ReiniciarButton_Click(object sender, RoutedEventArgs e)
         {
             numAleatorio = aleatorio.Next(0,100);
+            numeroTextBox.Clear();
+            mensajeResultado.Text = "";
+            
         }
     }
 }
